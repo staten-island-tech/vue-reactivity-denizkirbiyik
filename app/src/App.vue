@@ -1,9 +1,19 @@
 <template>
-  <div>
-    <h1 class="">skbiidi</h1>
+  <div class="flex h-screen">
+    <MainContainer />
+
+    <SideBar />
   </div>
 </template>
 
-<script setup></script>
+<script>
+import MainContainer from './components/MainContainer.vue'
+import SideBar from './components/SideBar.vue'
 
-<style scoped></style>
+export default {
+  components: {
+    MainContainer,
+    SideBar,
+  },
+}
+</script>
