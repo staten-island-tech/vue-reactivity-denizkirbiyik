@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center justify-center h-screen flex-1 bg-gray-600 p-4">
+  <div class="flex flex-col items-center justify-center h-screen flex-1 bg-gray-600 p-4">
     <form @submit.prevent="">
-      <input++
+      <input
         class="bg-white border border-gray-300 rounded-lg p-1"
         type="password"
         v-model="test.sigma"
@@ -13,7 +13,9 @@
         Submit
       </button>
     </form>
-    <h1>{{ test }}</h1>
+    <div class="text-white" v-if="!/[A-Z]/.test(test.sigma)">No skibidi capital</div>
+    <div class="text-white" v-if="!/\d/.test(test.sigma)">No skibidi numbah</div>
+    <div class="text-white" v-if="test.sigma.length < 9">Not more than skibidi eight</div>
   </div>
 </template>
 
