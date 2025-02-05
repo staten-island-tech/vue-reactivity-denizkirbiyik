@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import SideCard from "./SideCard.vue"
+import SideCard from '@/components/SideCard.vue'
 
 export default {
   components: {
-    SideCard
+    SideCard,
   },
 }
 </script>
