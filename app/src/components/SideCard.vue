@@ -8,7 +8,7 @@
       readonly="readonly"
     />
     <button
-      @click="cl"
+      @click="b = !b"
       class="bg-blue-500 border border-blue-500 hover:border-blue-600 hover:bg-blue-600 hover:cursor-pointer rounded-lg p-1 m-1"
     >
       skib
@@ -17,17 +17,16 @@
 </template>
 
 <script>
+import { ref } from 'vue'
+
+const b = ref(true)
+/*
 export default {
   data() {
     return {
       b: true,
     }
   },
-  methods: {
-    cl() {
-      this.b = !this.b
-      console.log(this.b)
-    },
-  },
 }
+*/
 </script>
