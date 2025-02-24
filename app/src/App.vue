@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import MainContainer from './components/MainContainer.vue'
-import SideBar from './components/SideBar.vue'
+import MainContainer from '@/components/MainContainer.vue'
+import SideBar from '@/components/SideBar.vue'
 
 export default {
   components: {
